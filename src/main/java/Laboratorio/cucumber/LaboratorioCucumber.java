@@ -1,0 +1,15 @@
+package Laboratorio.cucumber;
+
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
+import org.junit.runner.RunWith;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+        glue = {"steps"},
+        tags = "@test01",
+        features = {"src/main/java/features"}
+)
+
+public class LaboratorioCucumber {
+}
